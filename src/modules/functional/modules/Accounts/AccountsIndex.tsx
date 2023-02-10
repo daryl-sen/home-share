@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PageContainer from '../../../layout/modules/PageContainer';
-import AccountsTable from './Table';
+import AccountsTable from './AccountsTable';
 
 export default function Todo() {
   return <PageContainer>
