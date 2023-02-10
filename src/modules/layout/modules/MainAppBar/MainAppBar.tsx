@@ -1,12 +1,14 @@
-import React, { useState } from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import MainDrawer from "./submodules/MainDrawer/MainDrawer";
+import React, { useState } from 'react';
+
+import MenuIcon from '@mui/icons-material/Menu';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+
+import MainDrawer from './submodules/MainDrawer/MainDrawer';
 
 export default function MainAppBar() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -31,7 +33,7 @@ export default function MainAppBar() {
               variant="subtitle1"
               sx={{ flexGrow: 1, textAlign: "center" }}
             >
-              HomeShare
+              LegitBank Canada
             </Typography>
             <Button color="inherit">Login</Button>
           </Toolbar>

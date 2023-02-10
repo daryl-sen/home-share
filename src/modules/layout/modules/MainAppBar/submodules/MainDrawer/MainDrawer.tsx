@@ -1,15 +1,16 @@
-import * as React from "react";
-import Drawer from "@mui/material/Drawer";
-import Stack from "@mui/material/Stack";
-import HomeIcon from "@mui/icons-material/Home";
-import NavigationButton from "./submodules/NavigationButton";
-import CloudCircleIcon from "@mui/icons-material/CloudCircle";
-import ContentPasteIcon from "@mui/icons-material/ContentPaste";
-import VpnKeyIcon from "@mui/icons-material/VpnKey";
-import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
-import PlaylistAddCheckIcon from "@mui/icons-material/PlaylistAddCheck";
-import { useNavigate } from "react-router-dom";
+import * as React from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
+import HelpIcon from '@mui/icons-material/Help';
+import HomeIcon from '@mui/icons-material/Home';
+import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
+import Divider from '@mui/material/Divider';
+import Drawer from '@mui/material/Drawer';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+
+import NavigationButton from './submodules/NavigationButton';
 
 interface MainDrawerProps {
   isOpen: boolean;
@@ -43,39 +44,30 @@ export default function MainDrawer({ isOpen, setIsOpen }: MainDrawerProps) {
         </NavigationButton>
         <NavigationButton
           handleClick={() => {
-            navigate("/file-storage");
+            navigate("/accounts");
             setIsOpen();
           }}
-          icon={<CloudCircleIcon />}
+          icon={<MonetizationOnIcon />}
         >
-          File Storage
+          My Accounts
         </NavigationButton>
         <NavigationButton
           handleClick={() => {
-            navigate("/shared-clipboard");
+            navigate("/transfers");
             setIsOpen();
           }}
-          icon={<ContentPasteIcon />}
+          icon={<CurrencyExchangeIcon />}
         >
-          Clipboard
+          Transfers
         </NavigationButton>
         <NavigationButton
           handleClick={() => {
-            navigate("/password-manager");
+            navigate("/contact");
             setIsOpen();
           }}
-          icon={<VpnKeyIcon />}
+          icon={<HelpIcon />}
         >
-          Passwords
-        </NavigationButton>
-        <NavigationButton
-          handleClick={() => {
-            navigate("/todo");
-            setIsOpen();
-          }}
-          icon={<PlaylistAddCheckIcon />}
-        >
-          Todo
+          Contact Us
         </NavigationButton>
       </Stack>
     </Drawer>

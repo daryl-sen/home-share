@@ -1,20 +1,18 @@
-import React from "react";
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 
-import Dashboard from "./modules/functional/modules/Dashboard/DashboardIndex";
-import SharedClipboard from "./modules/functional/modules/Clipboard/SharedClipboardIndex";
-import FileStorage from "./modules/functional/modules/FileStorage/FileStorageIndex";
-import PasswordManager from "./modules/functional/modules/PasswordManager/PasswordManagerIndex";
-import Todo from "./modules/functional/modules/Todo/TodoIndex";
-import { Routes, Route } from "react-router-dom";
+import Accounts from './modules/functional/modules/Accounts/AccountsIndex';
+import Contact from './modules/functional/modules/Contact/ContactIndex';
+import Dashboard from './modules/functional/modules/Dashboard/DashboardIndex';
+import Transfers from './modules/functional/modules/Transfers/TransfersIndex';
 
 export default function Router() {
   return (
     <Routes>
       <Route path="/" element={<Dashboard />} />
-      <Route path="/shared-clipboard" element={<SharedClipboard />} />
-      <Route path="/file-storage" element={<FileStorage />} />
-      <Route path="/password-manager" element={<PasswordManager />} />
-      <Route path="/todo" element={<Todo />} />
+      <Route path="/accounts" element={<Accounts />} />
+      <Route path="/transfers" element={<Transfers />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 }
