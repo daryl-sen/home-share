@@ -1,7 +1,16 @@
 import React from 'react';
 
+import { maxWidth } from '@mui/system';
+
 import PageContainer from '../../../layout/modules/PageContainer';
+import AccountsTable from './Table';
 
 export default function Todo() {
-  return <PageContainer>Todo</PageContainer>;
+  return <PageContainer>
+    <div style={ {maxWidth: "1000px"} }>
+      <h1>Accounts</h1>
+      <p>You got that bling 😎</p>
+      <AccountsTable />
+    </div>
+  </PageContainer>;
 }
