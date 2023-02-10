@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { maxWidth } from '@mui/system';
-
 import PageContainer from '../../../layout/modules/PageContainer';
 import AccountsTable from './Table';
 
