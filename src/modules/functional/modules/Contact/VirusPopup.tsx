@@ -47,7 +47,7 @@ export default function VirusPopup() {
       >
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mb: 6 }}>
-            Virus <s>Scam</s> Scan
+            Virus <s>Scam</s> Scan 😈
           </Typography>
           <LinearProgress />
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
