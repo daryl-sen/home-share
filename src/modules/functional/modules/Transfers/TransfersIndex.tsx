@@ -1,10 +1,11 @@
 import React from 'react';
 
 import { Paper } from '@mui/material';
-import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 
 import PageContainer from '../../../layout/modules/PageContainer';
 import AccountsDropdown from './AccountsDropdown';
+import TransferringModal from './TransferringModal';
 
 export default function Todo() {
   return <PageContainer>
@@ -15,11 +16,13 @@ export default function Todo() {
       <Paper>
         <h2>Transfer funds from</h2>
         <AccountsDropdown />
+        <TextField id="filled-basic" label="Amount" variant="filled" />
+
 
         <h3>Transfer funds to</h3>
         <AccountsDropdown />
 
-        <Button variant="contained" sx={{ mt: 4 }}>Transfer</Button>
+        <TransferringModal />
       </Paper>
     </div>
 
